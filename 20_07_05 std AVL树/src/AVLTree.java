@@ -1,10 +1,11 @@
+//AVL树的实现
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 class Node{
     int key;
-    int bf;//平衡因子
+    int bf;//平衡因子(节点平衡因子 = 左子树的高度 - 右子树的高度)
     Node left;
     Node right;
     Node parent;//记录结点的父结点，如果结点是根结点，则 parent == null
